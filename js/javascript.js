@@ -1,7 +1,7 @@
 // Roshambo External JS file
 
 // Initialize array of possible hands
-const hand = ['Rock', 'Paper', 'Scissors'];
+const hand = ['rock', 'paper', 'scissors'];
 
 // Get random hand for the computer
 function getComputerChoice() {
@@ -11,9 +11,11 @@ function getComputerChoice() {
 // Prompt user for their hand
 function getUserChoice() {
     let userSelection = prompt("What shape would you like to throw?")
+    userSelection = userSelection.toLowerCase();
 }
 
 // Simulate a round of rock paper scissors
+
     // Prompt user for their hand
     // Get random hand for the computer
     // Compare user's hand versus the computer's
