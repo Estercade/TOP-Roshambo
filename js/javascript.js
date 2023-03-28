@@ -73,6 +73,10 @@ function game() {
         playerSelection = playerSelection.toLowerCase();
         let computerSelection = getComputerChoice();
         playRound(playerSelection, computerSelection);
+        if (playerSelection === computerSelection) {
+            i--;
+        }
+        console.log(result);
     }
     console.log(`You won ${score} out of 5 rounds!`)
 }
